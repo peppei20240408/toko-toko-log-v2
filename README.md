@@ -31,10 +31,6 @@ TokoTokoLog(トコトコLog)
 
 ## データベース設計
 
-<!--
-ER図
--->
-
 <img src="https://gyazo.com/8bc219782e1e27b1d76abd5ba1f3cad8.png" width="400">
 
 ## users テーブル
