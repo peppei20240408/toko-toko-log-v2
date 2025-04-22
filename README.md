@@ -39,9 +39,9 @@ ER図
 
 | Column             | Type    | Options     |
 | ------------------ | ------  | ----------- |
-| name               | string  | null: false |
 | email              | string  | null: false, unique: true |
 | encrypted_password | string  | null: false |
+| name               | string  | null: false |
 
 ### Association
 
