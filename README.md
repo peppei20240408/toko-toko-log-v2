@@ -65,8 +65,8 @@ TokoTokoLog(トコトコLog)
 | Column             | Type       | Options     |
 | ------------------ | ------     | ----------- |
 | pin_order          | integer    | null: false               |
-| latitude           | integer    | null: false               |
-| longitude          | integer    | null: false               |
+| latitude           | float      | null: false               |
+| longitude          | float      | null: false               |
 | memo               | text       |                           |
 | user               | references | null: false, foreign_key: true |
 | toko_log           | references | null: false, foreign_key: true |
