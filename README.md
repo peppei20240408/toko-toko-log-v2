@@ -31,19 +31,15 @@ TokoTokoLog(トコトコLog)
 
 ## データベース設計
 
-<!--
-ER図
--->
-
-<img src="https://gyazo.com/8bc219782e1e27b1d76abd5ba1f3cad8.png" width="400">
+<img src="https://gyazo.com/b3ba236f28624176edd32ee5d1927d80.png" width="400">
 
 ## users テーブル
 
 | Column             | Type    | Options     |
 | ------------------ | ------  | ----------- |
+| name               | string  | null: false |
 | email              | string  | null: false, unique: true |
 | encrypted_password | string  | null: false |
-| name               | string  | null: false |
 
 ### Association
 
@@ -69,8 +65,8 @@ ER図
 | Column             | Type       | Options     |
 | ------------------ | ------     | ----------- |
 | pin_order          | integer    | null: false               |
-| latitude           | integer    | null: false               |
-| longitude          | integer    | null: false               |
+| latitude           | float      | null: false               |
+| longitude          | float      | null: false               |
 | memo               | text       |                           |
 | user               | references | null: false, foreign_key: true |
 | toko_log           | references | null: false, foreign_key: true |
